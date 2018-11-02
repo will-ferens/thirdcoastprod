@@ -1,5 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import '../styles/care.css'
+import demo from '../assets/patient-demographics.pdf'
+import newPatient from '../assets/new-patient.pdf'
 import MapContainer from './map'
 
 const Care = () => {
@@ -20,7 +23,11 @@ const Care = () => {
                         <li>Verify your demographic information</li>
                         <li>Make sure we have your permission to treat you</li>
                         <li>Give us permission to obtain copies of your medical records from other providers when needed</li>
-                        <li>Verify who, if anyone, can we speak to about your medical chart. You can update this information anytime by printing the form provided *here* and bringing it to the office</li>
+                        <li>Verify who, if anyone, can we speak to about your medical chart. You can update this information anytime by printing the form provided &nbsp;
+                            <NavLink to={demo} target="_blank" className="nav-link">
+                                here
+                            </NavLink> and bringing it to the office
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -28,7 +35,11 @@ const Care = () => {
                 <div>
                     <h1>Scheduling Appointments</h1>
                     <p><b><i>Routine Appointments</i></b> such as annual check-ups, DOT physicals, and follow-up visits can all be scheduled in advance by calling our office or sending us a request through the patient portal.</p>
-                    <p><b><i>New Patient Appointments</i></b> will be scheduled once we have received your past medical records. For details about this process and the forms necessary to establish as a new patient, click *here*.</p>
+                    <p><b><i>New Patient Appointments</i></b> will be scheduled once we have received your past medical records. For details about this process and the forms necessary to establish as a new patient, click &nbsp;
+                        <NavLink to={newPatient} target="_blank" className="nav-link">
+                            here
+                        </NavLink>.
+                    </p>
                     <p><b><i>Same Day Appointments</i></b> are available to established patients as illness and injury cannot be anticipated. Thirty percent of our appointment slots are reserved for same day scheduling, so give us a call when you need us.<i> These slots fill up quickly, so call as early in the day as possible!</i></p>
                     <p><b><i>After a Hospitalization</i></b> for a smooth transition after a hospitalization or nursing home rehabilitation, Dr. Matheson would like to see you within 7 days of your discharge. We reserve time in our schedule for these appointments as well, so please contact us when you are discharged.</p>
                     <h3>No appointment necessary for:</h3>

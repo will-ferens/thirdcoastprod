@@ -1,4 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import consent from '../assets/consent-disenroll-form.pdf'
+import patient from '../assets/patient-cenetered.pdf'
+import payment from '../assets/payment-policy.pdf'
 import '../styles/services.css'
 import MapContainer from './map'
 
@@ -22,7 +26,11 @@ const Services = () => {
                         <li>Electrocardiograms and pulmonary function tests</li>
                         <li>Injections and immunizations including allergy shots</li>
                         <li>Lab tests for managing diabetes and anticoagulation therapy</li>
-                        <li>RN Chronic Care Manager (to enroll in these services click *here*)</li>
+                        <li>RN Chronic Care Manager (to enroll in these services click&nbsp; 
+                            <NavLink to={consent} target="_blank" className="nav-link">
+                                here
+                            </NavLink>)
+                        </li>
                         <li>Patient Centered Medical Home</li>
                     </ul>
                 </div>
@@ -59,12 +67,20 @@ const Services = () => {
                         <li>Monitoring and improving the quality of care delivered to patients with serious conditions such as diabetes</li>
                         <li>Proactively tracking and communicating results of tests and consultations</li>
                         <li>Serving as a resource of education and connection to community support</li>
-                        <li>To learn more about how we implement this model of care at Third Coast Family Practice, click *here*</li>
+                        <li>To learn more about how we implement this model of care at Third Coast Family Practice, click &nbsp; 
+                            <NavLink to={patient} target="_blank" className="nav-link">
+                                here
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <h1>Payment Options</h1>
-                    <p>New patients are encouraged to contact our office to verify that your insurance plan covers Dr. Matheson’s services. Co-payments are expected the day of service; we accept Mastercard, Visa and Discover cards. Patients who do not have insurance coverage for office visits will receive a discount if payment in full is received on the day of service. To review our Financial Policy, click *here*.</p>
+                    <p>New patients are encouraged to contact our office to verify that your insurance plan covers Dr. Matheson’s services. Co-payments are expected the day of service; we accept Mastercard, Visa and Discover cards. Patients who do not have insurance coverage for office visits will receive a discount if payment in full is received on the day of service. To review our Financial Policy, click &nbsp; 
+                        <NavLink to={payment} target="_blank" className="nav-link">
+                            here
+                        </NavLink>
+                    </p>
                 </div>
             </div>
             <div className="services-column-3">

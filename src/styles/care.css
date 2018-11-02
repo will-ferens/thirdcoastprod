@@ -41,7 +41,6 @@
     .care-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr .2fr; 
         max-width: 750px;
         grid-gap: 16px;
         padding-right: 12px;
@@ -49,9 +48,11 @@
     }
     .care-column-1 {
         grid-column: 1;
+        grid-template-rows: none;
     }
     .care-column-2 {
         grid-column: 2;
+        grid-template-rows: none;
     }
     .care-column-3 {
         grid-column-start: 1;
@@ -95,6 +96,7 @@
         grid-row: 4;
         max-height: none;
         grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
     }
     
 }
