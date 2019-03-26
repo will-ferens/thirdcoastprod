@@ -25,7 +25,7 @@ h1 {
 .column-3 {
     grid-column: 4;
     display: grid;
-    grid-template-rows: 1.25fr 1fr;
+    grid-template-rows: 1fr ;
 }
 .contact {
     display: grid;
@@ -67,7 +67,7 @@ h1 {
         grid-row: 2;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+        padding-bottom: 100px;
 
     }
 
@@ -91,9 +91,9 @@ h1 {
     }
     .column-3 {
         display: grid;
-        grid-row: 2;
+        grid-row: 3;
         grid-template-columns: none;
-        
+        grid-template-rows: 1.5fr 1fr;
     }
     
 }

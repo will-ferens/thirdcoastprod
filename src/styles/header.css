@@ -6,6 +6,28 @@
     grid-gap: 16px;
 }
 
+.portal {}
+
+.portal-button {
+    font-size: 22px;
+    padding: 0.3em 1.2em;
+    font-weight: 500;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: rgb(220, 222, 237);
+    color: #2F5390;
+    text-align: center;
+    transition: all 0.2s;
+    height: auto;
+    border-radius: 3px;
+}
+
+.portal-button:hover {
+    background-color: #4095c6;
+    color: #fff
+}
+
 .nav-bar {
     grid-column: 3;
     grid-row: 1;
@@ -22,6 +44,7 @@
     text-decoration: none;
     color: white;
 }
+
 .nav-item:hover {
     text-decoration: underline;
 }
@@ -40,6 +63,7 @@
     justify-self: flex-end;
     grid-row: 2;
 }
+
 #logo {
     height: 150px;
     grid-column: 2;
@@ -47,9 +71,10 @@
     color: white;
 }
 
-@media all and (max-width: 768px) { 
+@media all and (max-width: 768px) {
     .header-wrap {
-        background: #2F5390;;
+        background: #2F5390;
+        ;
         margin-bottom: 1.45rem;
         height: 40vh;
         display: grid;
@@ -69,6 +94,7 @@
         display: grid;
         grid-Template-Columns: 1fr 1fr 1fr 1fr;
     }
+
     .nav-item {
         text-decoration: none;
         color: white;
@@ -81,6 +107,7 @@
         grid-row: 1;
         justify-self: flex-end;
     }
+
     .logo-wrapper {
         grid-column: 2;
         justify-self: center;
@@ -89,9 +116,10 @@
     }
 }
 
-@media all and (max-width: 480px) { 
+@media all and (max-width: 480px) {
     .header-wrap {
-        background: #2F5390;;
+        background: #2F5390;
+        ;
         margin-bottom: 1.45rem;
         height: auto;
         display: grid;
@@ -104,8 +132,8 @@
         display: flex;
         justify-content: space-around;
         padding: inherit
-
     }
+
     .nav-item {
         font-size: 12px;
         text-decoration: none;
@@ -115,6 +143,6 @@
     .title {
         color: white;
         grid-column: 1;
-        padding-left: 6px; 
+        padding-left: 6px;
     }
 }

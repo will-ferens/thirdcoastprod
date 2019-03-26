@@ -6,6 +6,9 @@ import logo from '../assets/logo.png'
 const Header = () => {
     return (
         <div className="header-wrap">
+            <div class="portal">
+                <a href="https://health.eclinicalworks.com/thirdcoastfamily" ><button class="portal-button">Patient Portal</button></a>
+            </div>
             <div className="nav-bar">
                 <ul className="nav">
                     <Link to="/"className="nav-item">Home</Link>
